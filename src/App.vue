@@ -24,7 +24,7 @@ export default {
 
   methods:{
     getRoles(){
-      let roles = ["professor"];
+      let roles = ["aluno"];
       localStorage.setItem('roles', JSON.stringify(roles))
     }
   },

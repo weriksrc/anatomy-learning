@@ -18,7 +18,7 @@
 
 <script>
 import Welcome from "../components/Welcome"
-import TimeCard from "../components/TimeCard"
+import TimeCard from "@/components/TimeCard"
 import LearningList from "../components/LearningList"
 import LearningCard from "../components/LearningCard"
 import OrientationCard from "../components/OrientationCard"
