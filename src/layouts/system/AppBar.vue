@@ -1,14 +1,39 @@
 <template>
   <v-app-bar color="#D9D9D9" elevation="0" class="app-bar">
-    <v-toolbar-title></v-toolbar-title>
+    <v-app-bar-nav-icon @click="activeDrawer" v-can:roles="['professor']"></v-app-bar-nav-icon>
   </v-app-bar>
 </template>
 
 <script>
 export default {
 
-  name: 'AppBar'
+  name: 'AppBar',
 
+  props: {
+    drawer: {
+      type: Boolean,
+      default: false,
+    },
+  },
+
+  data(){
+    return{
+      drawerData: true,
+    }
+  },
+
+  watch: {
+    drawer(value) {
+      this.drawerData = value;
+    },
+  },
+
+  methods: {
+    activeDrawer() {
+      this.drawerData = !this.drawerData;
+      this.$emit("setDrawer", this.drawerData);
+    },
+  },
 }
 </script>
 

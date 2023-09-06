@@ -1,7 +1,7 @@
 export default [
 	{
-		path: "/perfil",
-		name: "Perfil",
+		path: "/pergunta",
+		name: "Pergunta",
 		component: () => import("../views/Index"),
 		meta: { isAuthenticated: true }
 	},

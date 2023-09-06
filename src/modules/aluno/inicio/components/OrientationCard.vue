@@ -19,8 +19,10 @@
 
 <script>
 import avatars from "../../../../assets/img/avatars.png"
-  export default {
-    data: () => ({
+export default {
+
+  data(){
+    return{
       avatars: avatars,
       items: [
         { text: 'Introdução a Anatomia Renal' },
@@ -28,8 +30,9 @@ import avatars from "../../../../assets/img/avatars.png"
         { text: 'Introdução a Anatomia Renal' },
         { text: 'Introdução a Anatomia Renal' },
       ],
-    }),
-  }
+    }
+  },
+}
 </script>
 
 <style>

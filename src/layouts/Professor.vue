@@ -5,29 +5,27 @@
     <v-container class="px-0 pt-14 ma-0 limited-height">
       <router-view></router-view>
     </v-container>
-    <BottomNavigation v-can:roles="['aluno']" />
   </v-container>
 </template>
 
 <script>
 import AppBar from '@/layouts/system/AppBar';
 import LeftBar from '@/layouts/system/LeftBar';
-import BottomNavigation from '@/layouts/system/BottomNavigation';
 export default {
 
   name: 'AnatomyLearningApp',
 
   components:{
     AppBar,
-    LeftBar,
-    BottomNavigation
+    LeftBar
   },
 
   data(){
     return{
       drawer: true,
     }
-  },
+  }
+
 }
 </script>
 

@@ -16,8 +16,21 @@ export default {
     AnatomyLearningApp,
   },
 
-  data: () => ({
-    //
-  }),
+  data(){
+    return{
+      
+    }
+  },
+
+  methods:{
+    getRoles(){
+      let roles = ["professor"];
+      localStorage.setItem('roles', JSON.stringify(roles))
+    }
+  },
+
+  created(){
+    this.getRoles()
+  }
 };
 </script>

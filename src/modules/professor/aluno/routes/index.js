@@ -1,7 +1,7 @@
 export default [
 	{
-		path: "/perfil",
-		name: "Perfil",
+		path: "/aluno",
+		name: "Aluno",
 		component: () => import("../views/Index"),
 		meta: { isAuthenticated: true }
 	},

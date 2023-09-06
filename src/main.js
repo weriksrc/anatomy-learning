@@ -3,8 +3,10 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify'
 import './registerServiceWorker'
 import router from './router'
+import canDirective from "./util/directives/can"
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+Vue.use(canDirective);
 
 new Vue({
   vuetify,

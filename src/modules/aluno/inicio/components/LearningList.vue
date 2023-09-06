@@ -29,17 +29,20 @@
 
 <script>
 import teste from "../../../../assets/img/rim.png"
-  export default {
-    data: () => ({
-      teste: teste,
+export default {
+
+  data(){
+    return{
+      teste:teste,
       items: [
         { text: 'Introdução a Anatomia Renal' },
         { text: 'Introdução a Anatomia Renal' },
         { text: 'Introdução a Anatomia Renal' },
         { text: 'Introdução a Anatomia Renal' },
       ],
-    }),
+    }
   }
+}
 </script>
 
 <style>

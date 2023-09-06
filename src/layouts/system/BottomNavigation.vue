@@ -29,8 +29,11 @@ export default {
 
   name: 'BottomNavigation',
 
-  data: () => ({ value: 0 }),
-
+  data(){
+    return{
+      value: 0,
+    }
+  },
 
 }
 </script>

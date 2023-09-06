@@ -30,14 +30,18 @@
 
 <script>
   export default {
-    data: () => ({
+
+  data(){
+    return{
       items: [
         { text: 'Trilha Renal', progress: 80, value: '30', valueTotal: '46' },
         { text: 'Trilha Pulmonar', progress: 85, value: '8', valueTotal: '18' },
         { text: 'Trilha Cardiovascular', progress: 60, value: '15', valueTotal: '24' },
         { text: 'Trilha Intestinal', progress: 30, value: '2', valueTotal: '16' },
       ],
-    }),
+    }
+  }
+
   }
 </script>
 
