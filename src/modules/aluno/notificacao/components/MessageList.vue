@@ -31,27 +31,27 @@ export default {
   data(){
     return{ 
       mensagens:[
-        // {
-        //   text: "Congratulations on completing the firts module", hour: "Just now"
-        // },
-        // {
-        //   text: "Congratulations on completing the firts module", hour: "Just now"
-        // },
-        // {
-        //   text: "Congratulations on completing the firts module", hour: "Just now"
-        // },
-        // {
-        //   text: "Congratulations on completing the firts module", hour: "Just now"
-        // },
-        // {
-        //   text: "Congratulations on completing the firts module", hour: "Just now"
-        // },
-        // {
-        //   text: "Congratulations on completing the firts module", hour: "Just now"
-        // },
-        // {
-        //   text: "Congratulations on completing the firts module", hour: "Just now"
-        // }
+        {
+          text: "Congratulations on completing the firts module", hour: "Just now"
+        },
+        {
+          text: "Congratulations on completing the firts module", hour: "Just now"
+        },
+        {
+          text: "Congratulations on completing the firts module", hour: "Just now"
+        },
+        {
+          text: "Congratulations on completing the firts module", hour: "Just now"
+        },
+        {
+          text: "Congratulations on completing the firts module", hour: "Just now"
+        },
+        {
+          text: "Congratulations on completing the firts module", hour: "Just now"
+        },
+        {
+          text: "Congratulations on completing the firts module", hour: "Just now"
+        }
       ]
     }
   }
