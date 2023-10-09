@@ -1,7 +1,7 @@
 export default [
 	{
-		path: "/resumo",
-		name: "Resumo",
+		path: "/agenda",
+		name: "Agenda",
 		component: () => import("../views/Index"),
 		meta: { isAuthenticated: true }
 	},
