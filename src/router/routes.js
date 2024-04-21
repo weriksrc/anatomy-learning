@@ -10,7 +10,7 @@ import Agenda from "@/modules/professor/agenda/routes/index"
 import Professor from "@/modules/professor/professor/routes/index"
 import Aluno from "@/modules/professor/aluno/routes/index"
 import Usuario from "@/modules/professor/usuario/routes/index"
-// import Login from "@/views/login/routes/index"
+import Auth from "@/modules/auth/routes/index"
 
 const perfilProfessor = true
 export default [
@@ -20,16 +20,18 @@ export default [
     redirect: perfilProfessor ?  "/dashboard" : "/meta",
     component: System,
     // meta: { isAuthenticated: true },
+    children: [
+      ...Inicio,
+      ...Meta,
+      ...Notificacao,
+      ...Perfil,
+      ...Dashboard,
+      ...Trilha,
+      ...Agenda,
+      ...Professor,
+      ...Aluno,
+      ...Usuario,
+    ]
   },
-  ...Inicio,
-  ...Meta,
-  ...Notificacao,
-  ...Perfil,
-  ...Dashboard,
-  ...Trilha,
-  ...Agenda,
-  ...Professor,
-  ...Aluno,
-  ...Usuario
-//   ...Login,
+  ...Auth,
 ];
