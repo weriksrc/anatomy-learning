@@ -13,10 +13,7 @@
       <v-list nav dense>
         <v-list-item-group>
           <div v-for="(item, x) in itemsMenu" :key="x">
-            <v-list
-              v-if="!item.hasOwnProperty('children')"
-              v-can:roles="item.role"
-            >
+            <v-list v-if="!item.hasOwnProperty('children')" v-can:roles="item.role">
               <router-link :to="item.route">
                 <v-list-item>
                   <v-list-item-icon>
@@ -48,57 +45,56 @@
 
 <script>
 export default {
-
   props: {
     drawer: {
       type: Boolean,
-      default: false,
-    },
+      default: false
+    }
   },
 
-  data(){
-    return{
+  data() {
+    return {
       drawerData: false,
       itemsMenu: [
         {
           text: "Dashboard",
           icon: "mdi-view-dashboard",
           route: "/dashboard",
-          role: ["professor"],
+          role: ["professor"]
         },
         {
           text: "Trihas",
           icon: "mdi-file-certificate",
           route: "/trilha",
-          role: ["professor"],
+          role: ["professor"]
         },
         {
-          text: "Resumos",
+          text: "Agenda",
           icon: "mdi-file-document-multiple",
-          route: "/resumo",
-          role: ["professor"],
+          route: "/agenda",
+          role: ["professor"]
         },
         {
-          text: "Perguntas",
+          text: "Professores",
           icon: "mdi-help-rhombus",
-          route: "/pergunta",
-          role: ["professor"],
+          route: "/professor",
+          role: ["professor"]
         },
 
         {
           text: "Alunos",
           icon: "mdi-account-multiple",
           route: "/aluno",
-          role: ["professor"],
+          role: ["professor"]
         },
         {
           text: "Usuários",
           icon: "mdi-account",
           route: "/usuario",
-          role: ["admin"],
-        },
-      ],
-    }
+          role: ["admin"]
+        }
+      ]
+    };
   },
 
   methods: {
@@ -107,17 +103,16 @@ export default {
       this.$emit("setDrawerResponsiveness", value);
     },
     logout() {
-
       // this.$store.dispatch("logout");
       // this.$router.push("/login");
-    },
+    }
   },
 
   watch: {
     drawer(value) {
       this.drawerData = value;
-    },
-  },
+    }
+  }
 };
 </script>
 
