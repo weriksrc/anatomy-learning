@@ -1,20 +1,15 @@
 <template>
   <v-app>
     <v-main>
-      <AnatomyLearningApp />
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import AnatomyLearningApp from '@/layouts/Index'
 
 export default {
   name: 'App',
-
-  components: {
-    AnatomyLearningApp,
-  },
 
   data(){
     return{
@@ -24,7 +19,7 @@ export default {
 
   methods:{
     getRoles(){
-      let roles = ["aluno"];
+      let roles = ["professor"];
       localStorage.setItem('roles', JSON.stringify(roles))
     }
   },
